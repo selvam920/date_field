@@ -63,7 +63,7 @@ class DateTimeField extends StatefulWidget {
     this.style,
     this.focusNode,
     this.autofocus = false,
-    this.enableFeedback,
+    this.enableFeedback = false,
     this.padding,
     this.hideDefaultSuffixIcon = false,
     this.decoration,
@@ -99,7 +99,7 @@ class DateTimeField extends StatefulWidget {
     VoidCallback? onTap,
     FocusNode? focusNode,
     bool hideDefaultSuffixIcon = false,
-    bool? enableFeedback,
+    bool enableFeedback = false,
     DateTimeFieldPickerPlatform pickerPlatform =
         DateTimeFieldPickerPlatform.adaptive,
   }) =>

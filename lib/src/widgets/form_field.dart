@@ -24,7 +24,7 @@ class DateTimeFormField extends FormField<DateTime> {
     VoidCallback? onTap,
     FocusNode? focusNode,
     bool autofocus = false,
-    bool? enableFeedback,
+    bool enableFeedback = false,
     EdgeInsetsGeometry? padding,
     bool hideDefaultSuffixIcon = false,
     DateTime? initialPickerDateTime,
