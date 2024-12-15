@@ -10,4 +10,4 @@ dependencies:
   flutter:
     sdk: flutter
 
-  intl: '>=0.18.0 <0.20.0'
+  intl: ^0.20.1

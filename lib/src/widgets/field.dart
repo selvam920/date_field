@@ -132,7 +132,7 @@ class DateTimeField extends StatefulWidget {
     this.style,
     this.focusNode,
     this.autofocus = false,
-    this.enableFeedback,
+    this.enableFeedback = false,
     this.padding,
     this.decoration,
     this.mode = DateTimeFieldPickerMode.dateAndTime,
@@ -188,7 +188,7 @@ class DateTimeField extends StatefulWidget {
   final EdgeInsetsGeometry? padding;
 
   /// See [InkWell.enableFeedback].
-  final bool? enableFeedback;
+  final bool enableFeedback;
 
   /// The first [DateTime] the user can select.
   ///
@@ -274,7 +274,7 @@ class _DateTimeFieldState extends State<DateTimeField> {
     }
   }
 
-  bool debugCheckLocalizationsForPlatformAvailable(BuildContext context){
+  bool debugCheckLocalizationsForPlatformAvailable(BuildContext context) {
     assert(() {
       switch (widget.pickerPlatform) {
         case DateTimeFieldPickerPlatform.material:
